@@ -3,27 +3,48 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Projects</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Thiagos-App"
+    img="/proyect-1.jpg"
+    desc="Web app for a local business. Allows users to see the menu, make appointments, and register new clients as users also."
     url="#"
-    badge="NEW"
+    tech={["NestJS", "TypeScript", "Postgres", "Docker"]}
+    badge="Not Deployed"
   />
+  <a
+    class="link link-primary"
+    href="https://github.com/facundo1000/thiagos-app"
+    target="_blank">Proyect Repo</a
+  >
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Appointments App Manager"
+    img="/proyect-2.jpg"
+    desc="Web application for managing appointments for a therapist within a hospital. Using Springboot as a framework for the backend with Java, and Thymeleaf templates for the front-end using Server Side Rendering (SSR)."
+    url="https://consultorio-oey7.onrender.com/"
+    tech={["Springboot", "Java", "Thymeleaf", "HTML", "CSS", "JS", "Render"]}
   />
+  <a
+    href="https://github.com/facundo1000/webbapp-consultorio"
+    target="_blank"
+    class="link link-primary">Proyect Repo</a
+  >
+  <div class="divider my-0"></div>
 
-  <div>
+  <HorizontalCard
+    title="Mak.Dg Portfolio"
+    img="/proyect-3.jpg"
+    desc="Porfolio for a designer. Using Astro as a framework for the frontend and Netlify for the deployment."
+    url="https://porfolio-mg.netlify.app/"
+    badge="Private Repo"
+    tech={["Astro", "Netlify", "HTML", "CSS", "JS"]}
+  />
+  <!-- <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
   </div>
 
@@ -47,5 +68,5 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     img="/post_img.webp"
     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     url="#"
-  />
+  /> -->
 </BaseLayout>
