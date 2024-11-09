@@ -9,7 +9,5 @@ export default defineConfig({
   site: 'https://portfolio-dev-bice-chi.vercel.app/',
   integrations: [mdx(), sitemap(), tailwind()],
   // output: "server",
-  // adapter: vercel({
-  //   webAnalytics: { enabled: true },
-  // })
+  // adapter: vercel(),
 });
